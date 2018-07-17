@@ -1,0 +1,885 @@
+﻿@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Antic');
+
+
+body {
+    background:#DADADA;
+    color:#00C659;
+    font-size:12px;
+	font-family: 'Antic', sans-serif;
+}
+a{
+    cursor: pointer !important;
+    text-decoration: none;
+    color:#D50000;
+	transition:1s;
+}
+
+a:hover{
+    text-decoration: none;
+    color: #43a6df;
+}
+
+/********************************************************
+**** FORMULAIO CSS
+********************************************************/
+/*.formulario{
+    padding: 20px;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-content: center;
+    align-items: center;
+}
+
+label {
+display: block;
+margin: 5px 0 0 0;
+}
+
+
+input:focus {
+border: 2px solid #000;
+background: #F3F3F3;
+}
+
+select {
+    width:240px;
+    padding:5px;
+    border:1px solid #E7E7E7;
+    margin-right:10px;
+}
+input#submit {
+    padding:5px 30px;
+    border:1px solid #E7E7E7;
+    margin-right:20px;
+    background:#444;
+    color:#FFF;
+}
+
+input[type=email],
+input[type=number],
+input[type=password],
+input[type=tel],
+input[type=text],
+input[type=url] {
+    -webkit-appearance: none;
+    appearance: none;
+    display: inline-block;
+    height: 29px;
+    margin: 0;
+    padding: 0 8px;
+    background: #fff;
+    border: 1px solid #d9d9d9;
+    border-top: 1px solid #c0c0c0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-border-radius: 1px;
+    -moz-border-radius: 1px;
+    border-radius: 1px;
+}
+
+.btn {
+	margin: 1em 0;
+    min-width: 46px;
+    text-align: center;
+    color: #444;
+    font-size: 11px;
+    font-weight: bold;
+    height: 27px;
+    padding: 0 8px;
+    line-height: 27px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    -webkit-transition: all 0.218s;
+    -moz-transition: all 0.218s;
+    -ms-transition: all 0.218s;
+    -o-transition: all 0.218s;
+    transition: all 0.218s;
+    border: 1px solid #dcdcdc;
+    background-color: #f5f5f5;
+    background-image: -webkit-gradient(linear,left top,left bottom,from(#f5f5f5),to(#f1f1f1));
+    background-image: -webkit-linear-gradient(top,#f5f5f5,#f1f1f1);
+    background-image: -moz-linear-gradient(top,#f5f5f5,#f1f1f1);
+    background-image: -ms-linear-gradient(top,#f5f5f5,#f1f1f1);
+    background-image: -o-linear-gradient(top,#f5f5f5,#f1f1f1);
+    background-image: linear-gradient(top,#f5f5f5,#f1f1f1);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    cursor: pointer;
+}
+
+.btn a:hover{
+  margin: 1em 0;
+    min-width: 46px;
+    text-align: center;
+    color: #fff;
+    font-size: 11px;
+    font-weight: bold;
+    height: 27px;
+    padding: 0 8px;
+    line-height: 27px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    -webkit-transition: all 0.218s;
+    -moz-transition: all 0.218s;
+    -ms-transition: all 0.218s;
+    -o-transition: all 0.218s;
+    transition: all 0.218s;
+    border: 1px solid #dcdcdc;
+    background-color: #43a6df;
+    background-image: -webkit-gradient(linear,left top,left bottom,from(#f5f5f5),to(#f1f1f1));
+    background-image: -webkit-linear-gradient(top,#f5f5f5,#f1f1f1);
+    background-image: -moz-linear-gradient(top,#f5f5f5,#f1f1f1);
+    background-image: -ms-linear-gradient(top,#f5f5f5,#f1f1f1);
+    background-image: -o-linear-gradient(top,#f5f5f5,#f1f1f1);
+    background-image: linear-gradient(top,#f5f5f5,#f1f1f1);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    cursor: default;
+}
+
+.btn-link{
+    padding: 3px;
+    background: #2B6FB6;
+    color: white;
+}*/
+
+/********************************************************
+**** FORMULAIO CSS
+********************************************************/
+#CajaPrincipal{
+   
+    margin: 0 auto;
+}
+
+.cajaBuscar{
+    width: 500px;
+    float: left;
+	
+}
+
+.cajaHeader{
+	
+	padding:20px;
+	
+}
+
+.cajaRegistro{
+    width: 500px;
+    float: left;
+    text-align: right;
+}
+
+.cajaBanner{
+    height: 200px;
+    background: #43a6df;
+    background-image: url("../img/slide4.jpg");
+	background-size: cover;
+	animation-name: test;
+	animation-duration: 40s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+    transition: background-image 3s;
+}
+
+@-webkit-keyframes test {
+  0% {
+    background-image: url(../img/slide4.jpg);
+  }
+  
+    20% {
+    background-image: url(../img/slide4.jpg);
+  }
+      30% {
+    background-image: url(../img/slide1.jpg);
+  }
+    60% {
+    background-image: url(../img/slide1.jpg);
+  }
+    70% {
+    background-image: url(../img/slider2.jpg);
+  }
+
+  90% {
+    background-image: url(../img/slider2.jpg);
+  }
+}
+/****** CATEGORIAS FORO *****/
+.caja{
+    margin: 0 0 10px 0;
+}
+.categorias{
+    background: rgba(255, 119, 0,0.7);
+    color: white;
+    padding: 10px;
+    font-size: 14px;
+}
+/***** foro ****/
+.foro{
+    padding: 5px 0 5px 0;
+	border-bottom: rgba(0, 204, 102,0.5) solid 1px;
+   
+}
+
+.foro:last-child{
+    
+    border-bottom: none;
+} 
+
+.foro_perfil img{
+    float:left;
+    border-radius:100%;
+    margin:2%;
+}
+
+.foro_icono{
+    float: left;
+    width: 100px;
+    text-align: center;
+}
+
+.foro_titulo{
+    float: left;
+    width: 555px;
+}
+
+.temas_mensajes{
+    float: left;
+    width: 170px;
+}
+
+.ultimocomentario{
+    float: left;
+    width: 170px;
+}
+/***** temas ****/
+.temas_titulo{
+    float: left;
+    width: 645px;
+}
+
+.temas_respuestas{
+    float: left;
+    width: 170px;
+}
+.temas_ultimo{
+    float: left;
+    width: 150px;
+}
+
+.nuevotema{
+    text-align: right;
+    width: 100%;
+}
+
+.nuevotema a{
+    /*background: #dcdcdc;
+    padding: 8px;*/
+}
+
+/**** vista personalizada ****/
+
+.foroview_temas_titulo{
+	text-align: center;
+    float: left;
+    width: 350px;
+}
+
+.foroview_temas_descripcion{
+    float: left;
+    width: 290px;
+}
+
+.foroview_temas_respuestas{
+    float: left;
+    width: 170px;
+}
+
+.foroview_temas_ultimo{
+    float: left;
+    width: 150px;
+}
+
+.foroview_foro_icono {
+    float: left;
+    width: 50px;
+    text-align: center;
+}
+
+.foroview_foro_titulo{
+    float: left;
+    width: 140px;
+}
+
+.foroview_temas_desc{
+	float: left;
+	width: 460px;
+}
+
+.foroview_temas_mensajes{
+    float: left;
+    width: 170px;
+}
+
+.foroview_ultimocomentario{
+    float: left;
+    width: 170px;
+}
+
+/**** info ****/
+.temausuario{
+	
+    padding: 5px 0 5px 0;
+    display:flex;
+    flex-flow:nowrap;
+    justify-content:center;
+    align-items:center;
+}
+.temausuario a img{
+    border-radius: 50%;
+}
+.tema{
+    padding: 10px;
+    font-size: 1rem;
+}
+.tema p img{
+	max-width:500px;
+}
+@media (max-width: 600px) {
+	.tema p img{
+    max-width:200px !important;
+  }
+}
+.avatar{
+    
+    float: left;
+    
+}
+.usuario{
+   
+    float: left;
+}
+.datos{
+    
+    float: left;
+}
+.firma{
+    padding: 10px;
+    background-color:rgba(0, 204, 102,0.1);
+	
+}
+
+.tex{
+    width: 100%;
+}
+
+/*footer{
+    background: #3E3E3E;
+    height: 50px;
+    width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 20px;
+    color: white;
+}*/
+
+/* CUSTOM CSS PARA EL SELECTOR DEL LENGUAJE */
+
+.shadow-2, .language-dropdown.open label {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.shadow-3 {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.shadow-4 {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.shadow-5 {
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+.lang-list {
+	bottom: 164px;
+}
+.language-dropdown {
+  display: inline-block;
+  position: fixed; 
+  bottom: -111px; 
+  right: 6px;
+}
+.language-dropdown .lang-en {
+  border-left: 4px solid #E2162C;
+}
+.language-dropdown .lang-en .flag {
+  background-image: url("https://findicons.com/files/icons/281/flag_3/128/united_kingdom_flag.png");
+}
+.language-dropdown .lang-fr {
+  border-left: 4px solid #615CAF;
+}
+.language-dropdown .lang-fr .flag {
+  background-image: url("https://findicons.com/files/icons/280/flag_2/128/france_flag.png");
+}
+.language-dropdown .lang-de {
+  border-left: 4px solid #000000;
+}
+.language-dropdown .lang-de .flag {
+  background-image: url("https://findicons.com/files/icons/280/flag_2/128/germany_flag.png");
+}
+.language-dropdown .lang-es {
+  border-left: 4px solid #DA4D13;
+}
+.language-dropdown .lang-es .flag {
+  background-image: url("http://www.imaginarium.pt/responsive/2015/images/iconsFicha/banderaES.png");
+}
+.language-dropdown label, .language-dropdown ul li {
+  display: block;
+  width: 50px;
+  height: 38px;
+  background: #fff;
+  padding: 0px 6px;
+  cursor: pointer;
+}
+.language-dropdown ul.lang-list {
+  position: relative;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 1;
+}
+.language-dropdown ul.lang-list li {
+  border-bottom: 1px solid #ECECEC;
+}
+.language-dropdown ul.lang-list li:last-child {
+  border-bottom-right-radius: 2px;
+  border-bottom-left-radius: 2px;
+}
+.language-dropdown ul.lang-list li.selected {
+  display: none;
+}
+.language-dropdown label {
+  position: relative;
+  border-bottom: 1px solid #ECECEC;
+  border-radius: 3px;
+  z-index: 2;
+}
+.language-dropdown .lang-flag .flag, .language-dropdown .lang-list .lang .flag {
+  float: left;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  background-size: 35px 35px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.language-dropdown.open ul.lang-list {
+  visibility: visible;
+  opacity: 1;
+}
+.language-dropdown.open label {
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.animate, .lang-flag, .lang-list {
+  cursor: pointer;
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  -ms-transition: all .5s;
+  -ms-transition: all .5s;
+  transition: all .5s;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+}
+
+#lang_selector{
+	
+	z-index: 100;
+	
+}
+
+/*CUSTOM LOGIN*/
+button{
+	width: 40%;
+	margin: 5px 0 25px;
+}
+.titulo{
+	color: darkgreen;
+	animation: example 3s linear 1s infinite alternate;
+}
+div.modal-dialog.text-center{
+	margin-top:-50px;
+}
+
+@keyframes example {
+    from {color: darkgreen;}
+    to {color: lightgreen;}
+}
+
+.main-section{
+	margin:0 auto;
+	margin-top: 130px;
+	padding: 0;
+}
+
+.modal-content{
+	background-color: #3b4652;
+	opacity: .95;
+	padding: 0 18px;
+	box-shadow: 0px 0px 3px #848484;
+}
+
+.user-img{
+	margin-top: -50px;
+	margin-bottom: 35px;
+}
+.user-img img{
+	height:100px;
+	width:100px;
+	border-radius: 100%;
+	box-shadow: 0px 0px 2px #848484;
+}
+
+.form-group{
+	margin-bottom: 25px;
+}
+.form-group input{
+	height:42px;
+	border-radius: 5px;
+	border: 0;
+	font-size: 18px;
+	padding-left: 54px;
+	transition:1s;
+}
+.form-group input:focus{
+	border-bottom:4px groove lightgreen;
+}
+.form-group::before{
+	font-family: 'Font Awesome\ 5 Free';
+	content: "\f007";
+	position:absolute;
+	font-size:22px;
+	color:#555e60;
+	left:28px;
+	padding-top: 4px;
+}
+.form-group:last-of-type::before{
+	content: "\f023";
+}
+.svg-inline--fa {
+	font-size: 20px;
+	margin-right: 7px;
+}
+.forgot {
+	padding: 5px 0 25px;
+}
+.forgot a {
+	color: white;
+}
+.btn-login{
+	cursor: pointer;
+	width:100%;
+	background-color: #27c2a5;
+	color: #fff;
+	font-size: 19px;
+	padding: 7px 14px;
+	border-radius: 5px;
+	border-bottom: 4px solid #219882;
+}
+.btn-login:hover, .btn-login:focus{
+	background-color: #25a890 !important;
+	border-bottom: 4px solid #25a890 !important;
+		
+}
+
+/*css responsive*/
+
+ul{
+	
+	list-style:none;
+	padding-left:5px;
+	
+	
+}
+
+.foro ul li:nth-child(1) a{
+	
+	color: rgb(102, 153, 255);
+}
+
+a:hover{
+	
+	text-decoration:underline;
+	
+}
+
+.foro_titulo li a:hover{
+	
+	transform: scale(1.1,1.1);	
+	padding-left:10px;
+	
+}
+
+.foro label{
+	
+	color: black;
+	
+}
+
+.foro_titulo li{
+	
+	padding-left:15px;
+}
+
+.foro_titulo li:nth-child(1){
+	
+	padding-left:5px;
+}
+
+.foro_titulo > a{
+	
+	padding-left:10px;
+	
+}
+
+.foro_titulo > a:hover{
+		
+	padding-left:10px;
+	
+}
+
+.foro_titulo{
+	
+	padding-left:10px;
+	
+}
+
+a:hover{
+	
+	/*text-decoration: underline;*/
+	
+}
+
+small a{
+	
+	color: gray;
+	
+}
+
+.cajaTitulo{
+	
+	padding:0px;
+	
+}
+
+.caja li a{
+	
+	font-size: 1rem;
+	
+}
+
+.foroview_foro_titulo a{
+	
+	font-size: 1rem;
+	
+}
+
+.foro_titulo > a{
+	
+	font-size: 1rem;
+	
+}
+
+.migas{
+	
+	padding-left:15px;
+	
+}
+
+.migas p{
+	
+	padding-left:10px;
+	
+}
+
+.mceToolbarTop * {
+float:left;
+}
+.mceToolbarTop select {
+width:auto!important;
+}
+.mceToolbarTop option {
+float:none;
+}
+
+/*FOOTER STYLE*/
+.footer{
+	height:200px;
+	background-color:#323b40;
+}
+
+.footer p{
+	padding-top:10px;
+	color:white;
+}
+
+.footer a{
+	
+	color:white;
+}
+
+.footer svg:hover{
+	transform:scale(1.2,1.2);
+	box-shadow: 2px 2px 5px;
+	cursor:pointer;
+	
+
+}
+
+.footer svg{
+	padding:3px;
+	transition:1s;
+}
+
+/*BOTONES*/
+
+.foro a.btn-danger{
+	
+	font-size:0.7rem;
+	
+}
+
+.foro a.btn-primary{
+	
+	font-size:0.7rem;
+	
+}
+
+.categorias a.btn-danger{
+	
+	font-size:0.7rem;
+	
+}
+
+html, body{
+	height:100%;
+}
+/*Lo segundo, el container, con algura mínima del 100% y un margen inferior negativo igual al alto que queramos darle al pie*/
+#CajaPrincipal{ 
+   min-height: 90%;
+   position: relative;
+
+}
+ 
+/*Lo tercero, el pie con la altura deseada (igual al margen negativo de antes)*/
+
+ 
+/*Y terminamos con el clear, que ha de ser tan alto como el pie y "limpiar" todos los floats*/
+.clear{
+   height: 50px;
+   clear: both;
+}
+
+form label{
+	color:white;
+}
+.linkfooter a{
+	transition:1s;
+}
+
+.linkfooter a:hover{
+	color:green;
+}
+
+.usersonline{
+	color:green;
+}
+.masteronline{
+	color:red;
+}
+.adminonline{
+	color:orange;
+}
+
+/*Estilo para el OVERLAY*/
+
+#overlay {
+    position: fixed; /* Sit on top of the page content */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+	display: none;
+    top: 0; 
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+justify-content: center;
+align-items: center;
+}
+
+.password-recover::before {
+	content: "\f0e0" !important;
+}
+
+.password-label::before {
+	content: "\f023" !important;
+}
+
+#close-modal {
+    position: absolute;
+    top: -20px;
+    right: -60px;
+    cursor: pointer;
+}
+.logosvg{
+	margin:auto;
+	display:block;
+}
+/*Buscador*/
+
+.sugerMarcada {
+	background-color: lightgrey;
+}
+
+#buscador-resultados{
+	
+	padding: 0px;
+	
+}
+
+#buscador-resultados ul{
+	
+	box-shadow: 2px 2px 1px lightblue;
+	padding: 0px;
+	margin: 0px;
+	
+	
+}
+
+#buscador-resultados li{
+	
+	padding: 10px 10px;
+	
+}
+.map-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.map-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
