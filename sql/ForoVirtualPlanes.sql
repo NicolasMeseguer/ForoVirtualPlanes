@@ -167,6 +167,8 @@ CREATE TABLE `foro_temas` (
   `id_usuario` int(10) UNSIGNED NOT NULL,
   `activo` tinyint(2) NOT NULL,
   `hits` int(11) NOT NULL
+  `created_at` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `updated_at` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
